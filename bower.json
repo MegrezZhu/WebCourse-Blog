@@ -1,0 +1,23 @@
+{
+  "name": "webcourse-blog",
+  "description": "Just an assignment",
+  "main": "index.js",
+  "authors": [
+    "Zhu Chu"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/MegrezZhu/WebCourse-Blog",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "semantic": "^2.2.7",
+    "cryptojs": "*"
+  }
+}
