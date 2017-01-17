@@ -1,0 +1,12 @@
+body {
+    background-image: url('images/White-Wallpaper-2-2.jpg');
+}
+
+md-input-container {
+    font-size: 1.5em;
+}
+
+md-input-container input {
+    min-height: 50px;
+    padding: 10px !important;
+}

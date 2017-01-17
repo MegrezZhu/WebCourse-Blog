@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+</head>
+<body ng-app="blog" layout="column" ng-cloak ng-controller="blogCtrl">
+    <!-- Main Page Here ↓ -->
+
+    <md-content>
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button ng-href="#!/">Home</md-button>
+                <md-button ng-href="#!/articles">Articles</md-button>
+                <span flex></span>
+                <md-button ng-href="#!/login">Login</md-button>
+                <md-button ng-href="#!/regist">Regist</md-button>
+            </div>
+        </md-toolbar>
+    </md-content>
+    <ng-view flex></ng-view>
+
+    <!--<md-button class="animation-target md-primary md-raised" ng-controller="AnimationCtrl as ctrl" ng-click="ctrl.showDialog($event)">-->
+    <!--Dialog-->
+    <!--</md-button>-->
+
+    <!-- Main Page Here ↑ -->
+    <script src="./bower_components/cryptojs/lib/Crypto.js"></script>
+    <script src="./bower_components/cryptojs/lib/MD5.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="./bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="./bower_components/angular-material/angular-material.min.js"></script>
+    <script src="blog.js"></script>
+    <script src="./components/articles/articles.js"></script>
+    <script src="./components/userPanel/userPanel.js"></script>
+    <script src="./components/regist/regist.js"></script>
+    <script src="./components/login/login.js"></script>
+    <script src="./services/globalData.js"></script>
+    <script src="./filters/myCrypto.js"></script>
+</body>
+</html>
